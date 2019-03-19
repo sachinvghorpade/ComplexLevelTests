@@ -86,7 +86,5 @@ public class RETC_046_Properties_tab_POM {
 	public String getTextMessagePostPublished() { // Method to get text message "Post published. View post" message
 		return this.messagePostPublished.getText();
 	}
-	
-	
-}
 
+}

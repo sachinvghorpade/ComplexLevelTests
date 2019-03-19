@@ -47,8 +47,7 @@ public class RETC_048 {
 		addNewRegionPOM = new RETC_048_Add_New_Region_POM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		//report = new ExtentReports("./report/RETC_048.html");
-		report=ExtentReportGenerator.generateReport();
+		report = ExtentReportGenerator.generateReport();
 		test = report.startTest("Test Case name: RETC_048");
 		// open the browser
 		driver.get(baseUrl);
@@ -71,7 +70,6 @@ public class RETC_048 {
 		String expectedResult = "Post published. View post";
 		propertiesTabPOM.clickOnProperties();
 		test.log(LogStatus.INFO, "Test Step 1.", "Clicked on Properties tab");
-		
 
 		propertiesTabPOM.clickButtonAddNew();
 		test.log(LogStatus.INFO, "Test Step 2.", "Clicked on Add New button");

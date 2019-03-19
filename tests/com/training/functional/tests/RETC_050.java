@@ -54,8 +54,7 @@ public class RETC_050 {
 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		//report = new ExtentReports("./report/RETC_050.html");
-		report=ExtentReportGenerator.generateReport();
+		report = ExtentReportGenerator.generateReport();
 		test = report.startTest("Test Case name: RETC_050");
 		// open the browser
 		driver.get(baseUrl);

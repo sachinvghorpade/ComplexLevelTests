@@ -45,11 +45,10 @@ public class RETC_047 {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver);
 		propertiesTabPOM = new RETC_046_Properties_tab_POM(driver);
-		addNewFeaturePOM=new RETC_047_Add_New_Feature_POM(driver);
+		addNewFeaturePOM = new RETC_047_Add_New_Feature_POM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		//report = new ExtentReports("./report/RETC_047.html");
-		report=ExtentReportGenerator.generateReport();
+		report = ExtentReportGenerator.generateReport();
 		test = report.startTest("Test Case name: RETC_047");
 		// open the browser
 		driver.get(baseUrl);
@@ -75,39 +74,37 @@ public class RETC_047 {
 
 		propertiesTabPOM.clickButtonAddNew();
 		test.log(LogStatus.INFO, "Test Step 2.", "Clicked on Add New button");
-		
-		
+
 		addNewFeaturePOM.clickLinkAddNewFeature();
 		test.log(LogStatus.INFO, "Test Step 3.", "Clicked on Add new Feature link in Feature section");
-			
-		
+
 		addNewFeaturePOM.enterTextboxNewPropertyFeature("Best");
 		test.log(LogStatus.INFO, "Test Step 4.", "Entered valid details in Textbox");
-		
+
 		addNewFeaturePOM.selectDropdownNewPropertyFeature();
 		test.log(LogStatus.INFO, "Test Step 5.", "Selected valid details in Parent Feature list box");
-		
+
 		addNewFeaturePOM.clickButtonAddNewFeature();
 		test.log(LogStatus.INFO, "Test Step 6.", "Clicked on Add New Feature button");
-		
+
 		addNewFeaturePOM.refreshPage();
 		test.log(LogStatus.INFO, "Test Step 7.", "Clicked on Refresh button from keyboard");
-		
+
 		propertiesTabPOM.enterTitleTextBox("prestige");
 		test.log(LogStatus.INFO, "Test Step 8.", " Entered valid credentials in Enter Title Here textbox");
 
 		propertiesTabPOM.enterContentTextArea("home town");
 		test.log(LogStatus.INFO, "Test Step 9.", " Entered valid credentials in textbox");
-		
+
 		addNewFeaturePOM.clickCheckboxInterior();
 		test.log(LogStatus.INFO, "Test Step 10(i).", "Clicked on checkbox beside created feature(Interior)");
-		
+
 		addNewFeaturePOM.clickCheckBoxBest();
 		test.log(LogStatus.INFO, "Test Step 10(ii).", "Clicked on checkbox beside created feature(Best)");
-		
+
 		propertiesTabPOM.clickButtonPublish();
 		test.log(LogStatus.INFO, "Test Step 11.", "Clicked on Publish button");
-		
+
 		String actualResult = propertiesTabPOM.getTextMessagePostPublished();
 
 		if (expectedResult.equals(actualResult)) {

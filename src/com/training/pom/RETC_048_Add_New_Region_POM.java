@@ -32,8 +32,6 @@ public class RETC_048_Add_New_Region_POM {
 
 	@FindBy(id = "in-region-154") // Locator to locate check box (ElectronicCity) beside created region
 	private WebElement chkboxElectronicCity;
-	
-	
 
 	public void clickLinkAddNewRegion() { // Method for clicking Add new Region link in Feature section
 		this.linkAddNewRegion.click();
@@ -45,7 +43,7 @@ public class RETC_048_Add_New_Region_POM {
 	}
 
 	public void selectDropdownNewPropertyRegion() { // Method for selecting valid details in
-																			// Parent Region list box
+													// Parent Region list box
 		this.dropdownNewPropertyRegion.click();
 		Select sel = new Select(this.dropdownNewPropertyRegion);
 		sel.selectByValue("54");
@@ -68,6 +66,5 @@ public class RETC_048_Add_New_Region_POM {
 	public void refreshPage() { // Method for Refreshing web page
 		driver.navigate().refresh();
 	}
-	
-	
+
 }

@@ -47,15 +47,14 @@ public class RETC_049 {
 		replyToUserByAdminPOM = new RETC_049_Reply_To_UserPost_By_Admin_POM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
-		//report = new ExtentReports("./report/RETC_049.html");
-		report=ExtentReportGenerator.generateReport();
+		report = ExtentReportGenerator.generateReport();
 		test = report.startTest("Test Case name: RETC_049");
 		// open the browser
 		driver.get(baseUrl);
 		test.log(LogStatus.INFO, "Pre-Condition 1:", "User launched the application by entering valid URL.");
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
-		loginPOM.clickLoginBtn();		
+		loginPOM.clickLoginBtn();
 		replyToUserByAdminPOM.clickOnPosts();
 		replyToUserByAdminPOM.clickAdminPageLink("Add New");
 		replyToUserByAdminPOM.enterTitleText("New Launch");
@@ -65,77 +64,77 @@ public class RETC_049 {
 		screenShot.captureScreenShot("RETC_049_Pre-Condition2_admin_added_New_Launch_Post");
 		replyToUserByAdminPOM.moveMouserOverAdminIcon();
 		replyToUserByAdminPOM.clickLogOutLink();
-		
+
 	}
 
 	@AfterTest
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
 		driver.quit();
-	}	
+	}
 
 	@Test
-	public void Functional_Test_RETC_049() throws Exception {		
+	public void Functional_Test_RETC_049() throws Exception {
 		replyToUserByAdminPOM.clickBlogLink();
 		test.log(LogStatus.INFO, "Test Step 1.", "Clicked on Blog Tab");
-		
+
 		replyToUserByAdminPOM.clickReadMoreLink();
 		test.log(LogStatus.INFO, "Test Step 2.", "Clicked on Read More link of post added by admin");
-		
+
 		replyToUserByAdminPOM.enterUserComment("good");
 		test.log(LogStatus.INFO, "Test Step 3.", "Entered valid details in Comment textbox");
-		
+
 		replyToUserByAdminPOM.enterUserName("Manzoor Mehadi");
 		test.log(LogStatus.INFO, "Test Step 4(i).", "Entered User Name as Manzoor Mehadi ");
 		replyToUserByAdminPOM.enterUserEmail("manzoormehadi26@gmail.com");
 		test.log(LogStatus.INFO, "Test Step 4(ii).", "Entered User email as manzoormehadi26@gmail.com");
-		replyToUserByAdminPOM.clickButtonPostCommentUser();	
-		test.log(LogStatus.INFO, "Test Step 4.", "Clicked on Post Comment button");		
+		replyToUserByAdminPOM.clickButtonPostCommentUser();
+		test.log(LogStatus.INFO, "Test Step 4.", "Clicked on Post Comment button");
 		screenShot.captureScreenShot("RETC_049_Step4_User_Post_Comment");
-	
+
 		replyToUserByAdminPOM.launchNewWindowAdminSite();
 		test.log(LogStatus.INFO, "Test Step 5.", "Opened admin site in new window");
-		
+
 		loginPOM.sendUserName("admin");
 		test.log(LogStatus.INFO, "Test Step 6.", "Entered valid credential in Username textbox");
-		
+
 		loginPOM.sendPassword("admin@123");
 		test.log(LogStatus.INFO, "Test Step 7.", "Entered valid credential in Password textbox");
-		
+
 		loginPOM.clickLoginBtn();
 		test.log(LogStatus.INFO, "Test Step 8.", "Clicked on Sign in button");
-		
-		replyToUserByAdminPOM.clickAdminCommentTab();	
-		test.log(LogStatus.INFO, "Test Step 9.", "Clicked on Comments tab");	
-		
+
+		replyToUserByAdminPOM.clickAdminCommentTab();
+		test.log(LogStatus.INFO, "Test Step 9.", "Clicked on Comments tab");
+
 		screenShot.captureScreenShot("RETC_049_Step9_Number_Of_Response_Before_Admin_Response");
-		String beforeReponse=replyToUserByAdminPOM.getTextNoOfReponse();
-				
+		String beforeReponse = replyToUserByAdminPOM.getTextNoOfReponse();
+
 		replyToUserByAdminPOM.mouseOverCommentRow();
 		test.log(LogStatus.INFO, "Test Step 10.", "Mouse over the comment");
-		
+
 		replyToUserByAdminPOM.clickAdminPageLink("Reply");
 		test.log(LogStatus.INFO, "Test Step 11.", "Clicked on Reply icon");
-		
+
 		replyToUserByAdminPOM.enterReplyContentAdmin("Ok");
 		test.log(LogStatus.INFO, "Test Step 12.", "Entered valid details in comments textbox");
-		
+
 		replyToUserByAdminPOM.clickButtonReplyAdmin();
 		test.log(LogStatus.INFO, "Test Step 13.", "Clicked on Reply button");
-		
+
 		replyToUserByAdminPOM.refreshWebPage();
 		test.log(LogStatus.INFO, "Refresh Page.", "Refresh page to get incremented in Response icon of comment");
-		
-		String afterReponse=replyToUserByAdminPOM.getTextNoOfReponse();			
+
+		String afterReponse = replyToUserByAdminPOM.getTextNoOfReponse();
 		screenShot.captureScreenShot("RETC_049_Step13_Incremented_Number_Of_Response_After_Admin_Response");
-		
+
 		if ((afterReponse.compareToIgnoreCase(beforeReponse)) == 1) {
 			test.log(LogStatus.PASS, "Test Passed", "Number is incremented in Response icon of comment");
 		} else {
 			test.log(LogStatus.FAIL, "Test Failed", "Number is not incremented in Response icon of comment");
 		}
 		Assert.assertNotSame(beforeReponse, afterReponse);
-		
+
 		report.endTest(test);
 		report.flush();
 	}

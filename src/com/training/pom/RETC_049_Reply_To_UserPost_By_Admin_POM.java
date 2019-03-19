@@ -1,7 +1,5 @@
 package com.training.pom;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 	private WebDriver driver;
@@ -31,49 +28,48 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 	@FindBy(id = "publish") // Locator to locate 'Publish' button
 	private WebElement btnPublish;
 
-	@FindBy(xpath = "//a[contains(text(),'Howdy,')]")//Locator to locate Admin icon before logout
+	@FindBy(xpath = "//a[contains(text(),'Howdy,')]") // Locator to locate Admin icon before logout
 	private WebElement adminIcon;
 
-	@FindBy(xpath = "//a[@class='ab-item'][contains(text(),'Log Out')]")//Locator to locate logout link
+	@FindBy(xpath = "//a[@class='ab-item'][contains(text(),'Log Out')]") // Locator to locate logout link
 	private WebElement linkLogOut;
 
-	@FindBy(id = "menu-item-617")//Locator to locate Blog Tab
+	@FindBy(id = "menu-item-617") // Locator to locate Blog Tab
 	private WebElement linkBlog;
-	
-	@FindBy(css = "div[id^='post-'] a.read-more")//Locator to locate Read More link of post added by admin
+
+	@FindBy(css = "div[id^='post-'] a.read-more") // Locator to locate Read More link of post added by admin
 	private WebElement readMoreLink;
 
-	@FindBy(id = "comment")	//Locator to locate comment text box
+	@FindBy(id = "comment") // Locator to locate comment text box
 	private WebElement userCommentTextArea;
 
-	@FindBy(id = "author")//Locator to locate author of the post
+	@FindBy(id = "author") // Locator to locate author of the post
 	private WebElement userNameTextBox;
 
-	@FindBy(id = "email")//Locator to locate email text box
+	@FindBy(id = "email") // Locator to locate email text box
 	private WebElement userEmailTextBox;
 
-	@FindBy(id = "submit")//Locator to locate post Comment button
+	@FindBy(id = "submit") // Locator to locate post Comment button
 	private WebElement btnPostUserComment;
 
-	@FindBy(xpath = "//div[contains(text(),'Comments')]")//Locator to locate comments tab
+	@FindBy(xpath = "//div[contains(text(),'Comments')]") // Locator to locate comments tab
 	private WebElement tabAdminComment;
 
-	@FindBy(id = "replycontent")//Locator to locate comments text box by admin
+	@FindBy(id = "replycontent") // Locator to locate comments text box by admin
 	private WebElement textareaReplyContentAdmin;
 
-	@FindBy(id = "replybtn")//Locator to locate  reply icon by admin
+	@FindBy(id = "replybtn") // Locator to locate reply icon by admin
 	private WebElement btnReplyAdmin;
 
-	@FindBy(xpath = "//table[1]/tbody[1]/tr[1]")//Locator to locate to reply user's comments
+	@FindBy(xpath = "//table[1]/tbody[1]/tr[1]") // Locator to locate to reply user's comments
 	private WebElement mouseOverIdentifiedRow;
 
-	@FindBy(xpath = "//table[1]/tbody[1]/tr[1]/td[3]/div[1]/span[1]/a[1]/span[1]")//Locator to locate Response icon of comment
+	@FindBy(xpath = "//table[1]/tbody[1]/tr[1]/td[3]/div[1]/span[1]/a[1]/span[1]") // Locator to locate Response icon of
+																					// comment
 	private WebElement textNoOfReponse;
-	
-	@FindBy(tagName="body")//Locator for opening new window
-	private WebElement openNewWindow;  
-	
-	
+
+	@FindBy(tagName = "body") // Locator for opening new window
+	private WebElement openNewWindow;
 
 	public void clickOnPosts() { // Method for clicking on Posts link
 		this.posts.click();
@@ -93,7 +89,7 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 	}
 
 	public void enterContentInTextArea(String contentToEnter) throws Exception { // Method for entering credentials in
-		driver.switchTo().frame(0);																		// body text box
+		driver.switchTo().frame(0); // body text box
 		this.enterContentInTextArea.clear();
 		this.enterContentInTextArea.sendKeys(contentToEnter);
 		driver.switchTo().defaultContent();
@@ -106,7 +102,7 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 		Thread.sleep(4000);
 	}
 
-	public void moveMouserOverAdminIcon() throws Exception {//Method for mouse over to admin icon
+	public void moveMouserOverAdminIcon() throws Exception {// Method for mouse over to admin icon
 		Actions act = new Actions(driver);
 		act.moveToElement(this.adminIcon).build().perform();
 
@@ -134,14 +130,14 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 		this.userNameTextBox.sendKeys(textToEnter);
 	}
 
-	public void enterUserEmail(String textToEnter) { // Method for entering email id in email 
+	public void enterUserEmail(String textToEnter) { // Method for entering email id in email
 		this.userEmailTextBox.clear();
 		this.userEmailTextBox.sendKeys(textToEnter);
 	}
 
 	public void clickButtonPostCommentUser() throws Exception { // Method for clicking the Post User comments button
 		this.btnPostUserComment.click();
-		}
+	}
 
 	public void launchNewWindowAdminSite() throws Exception { // Method for opening new browser for admin
 		this.openNewWindow.sendKeys(Keys.chord(Keys.CONTROL, "n"));
@@ -153,7 +149,8 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 		this.tabAdminComment.click();
 	}
 
-	public void enterReplyContentAdmin(String textToEnter) { // Method for entering reply by admin in the Reply Content text box
+	public void enterReplyContentAdmin(String textToEnter) { // Method for entering reply by admin in the Reply Content
+																// text box
 		this.textareaReplyContentAdmin.clear();
 		this.textareaReplyContentAdmin.sendKeys(textToEnter);
 	}
@@ -168,11 +165,11 @@ public class RETC_049_Reply_To_UserPost_By_Admin_POM {
 		Thread.sleep(4000);
 	}
 
-	public String getTextNoOfReponse() {	// Method for getting no. of response
+	public String getTextNoOfReponse() { // Method for getting no. of response
 		return this.textNoOfReponse.getText();
 	}
-	
-	public void refreshWebPage()	//Method to refresh web page in order to get updated no. of response for post
+
+	public void refreshWebPage() // Method to refresh web page in order to get updated no. of response for post
 	{
 		driver.navigate().refresh();
 	}
