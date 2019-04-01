@@ -1,109 +1,499 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="698384" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:17:54Z">
+  <suite name="Sample test Suite" duration-ms="384464" started-at="2019-04-01T05:08:43Z" finished-at="2019-04-01T05:15:08Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="76881" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:07:33Z">
+    <test name="Sample test" duration-ms="29333" started-at="2019-04-01T05:08:43Z" finished-at="2019-04-01T05:09:13Z">
       <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:06:16Z">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUpBeforeClass" is-config="true" duration-ms="22" started-at="2019-04-01T05:08:43Z" finished-at="2019-04-01T05:08:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUp" is-config="true" duration-ms="54800" started-at="2019-03-19T13:06:16Z" finished-at="2019-03-19T13:07:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="setUp" is-config="true" duration-ms="19896" started-at="2019-04-01T05:08:44Z" finished-at="2019-04-01T05:09:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="validLoginTest" duration-ms="19850" started-at="2019-03-19T13:07:11Z" finished-at="2019-03-19T13:07:31Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="validLoginTest" duration-ms="7292" started-at="2019-04-01T05:09:03Z" finished-at="2019-04-01T05:09:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="tearDown" is-config="true" duration-ms="2181" started-at="2019-03-19T13:07:31Z" finished-at="2019-03-19T13:07:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@7cd62f43]" name="tearDown" is-config="true" duration-ms="2095" started-at="2019-04-01T05:09:11Z" finished-at="2019-04-01T05:09:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.sanity.tests.LoginTests -->
     </test> <!-- Sample test -->
-    <test name="RETC_046" duration-ms="98720" started-at="2019-03-19T13:07:33Z" finished-at="2019-03-19T13:09:12Z">
-      <class name="com.training.functional.tests.RETC_046">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="setUp" is-config="true" duration-ms="52544" started-at="2019-03-19T13:07:33Z" finished-at="2019-03-19T13:08:26Z">
+    <test name="RETC_076" duration-ms="71009" started-at="2019-04-01T05:09:13Z" finished-at="2019-04-01T05:10:24Z">
+      <class name="com.training.functional.tests.RETC_076">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_076@7085bdee]" name="setUp" is-config="true" duration-ms="28944" started-at="2019-04-01T05:09:13Z" finished-at="2019-04-01T05:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Functional_Test_RETC_046()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="Functional_Test_RETC_046" duration-ms="44088" started-at="2019-03-19T13:08:26Z" finished-at="2019-03-19T13:09:10Z">
+        <test-method status="PASS" signature="Functional_Test_RETC_076(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_076@7085bdee]" name="Functional_Test_RETC_076" duration-ms="16494" started-at="2019-04-01T05:09:43Z" data-provider="excel-inputs" finished-at="2019-04-01T05:09:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manzoor@Mehadi123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Agent]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functional_Test_RETC_046 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_046@73ad2d6]" name="tearDown" is-config="true" duration-ms="2078" started-at="2019-03-19T13:09:10Z" finished-at="2019-03-19T13:09:12Z">
+        </test-method> <!-- Functional_Test_RETC_076 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_076(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_076@7085bdee]" name="Functional_Test_RETC_076" duration-ms="11904" started-at="2019-04-01T05:09:59Z" data-provider="excel-inputs" finished-at="2019-04-01T05:10:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alex@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[alex@12312432432]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_076 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_076(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_076@7085bdee]" name="Functional_Test_RETC_076" duration-ms="10596" started-at="2019-04-01T05:10:11Z" data-provider="excel-inputs" finished-at="2019-04-01T05:10:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mariya@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mariya@12312354324532]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Shop manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_076 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_076@7085bdee]" name="tearDown" is-config="true" duration-ms="2127" started-at="2019-04-01T05:10:22Z" finished-at="2019-04-01T05:10:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.functional.tests.RETC_046 -->
-    </test> <!-- RETC_046 -->
-    <test name="RETC_047" duration-ms="120618" started-at="2019-03-19T13:09:12Z" finished-at="2019-03-19T13:11:12Z">
-      <class name="com.training.functional.tests.RETC_047">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="setUp" is-config="true" duration-ms="67381" started-at="2019-03-19T13:09:12Z" finished-at="2019-03-19T13:10:19Z">
+      </class> <!-- com.training.functional.tests.RETC_076 -->
+    </test> <!-- RETC_076 -->
+    <test name="RETC_077" duration-ms="58315" started-at="2019-04-01T05:10:24Z" finished-at="2019-04-01T05:11:22Z">
+      <class name="com.training.functional.tests.RETC_077">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_077@3f49dace]" name="setUp" is-config="true" duration-ms="31434" started-at="2019-04-01T05:10:24Z" finished-at="2019-04-01T05:10:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Functional_Test_RETC_047()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="Functional_Test_RETC_047" duration-ms="51207" started-at="2019-03-19T13:10:19Z" finished-at="2019-03-19T13:11:10Z">
+        <test-method status="PASS" signature="Functional_Test_RETC_077(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_077@3f49dace]" name="Functional_Test_RETC_077" duration-ms="15230" started-at="2019-04-01T05:10:56Z" data-provider="db-inputs1" finished-at="2019-04-01T05:11:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manzoor@Mehadi123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Agent]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functional_Test_RETC_047 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_047@31a5c39e]" name="tearDown" is-config="true" duration-ms="2026" started-at="2019-03-19T13:11:10Z" finished-at="2019-03-19T13:11:12Z">
+        </test-method> <!-- Functional_Test_RETC_077 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_077(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_077@3f49dace]" name="Functional_Test_RETC_077" duration-ms="9265" started-at="2019-04-01T05:11:11Z" data-provider="db-inputs1" finished-at="2019-04-01T05:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sachin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sachin@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sachin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ghorpade]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sachin@Ghorpade123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Author]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_077 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_077@3f49dace]" name="tearDown" is-config="true" duration-ms="2034" started-at="2019-04-01T05:11:20Z" finished-at="2019-04-01T05:11:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.functional.tests.RETC_047 -->
-    </test> <!-- RETC_047 -->
-    <test name="RETC_048" duration-ms="126889" started-at="2019-03-19T13:11:12Z" finished-at="2019-03-19T13:13:19Z">
-      <class name="com.training.functional.tests.RETC_048">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="setUp" is-config="true" duration-ms="60929" started-at="2019-03-19T13:11:12Z" finished-at="2019-03-19T13:12:13Z">
+      </class> <!-- com.training.functional.tests.RETC_077 -->
+    </test> <!-- RETC_077 -->
+    <test name="RETC_078" duration-ms="70415" started-at="2019-04-01T05:11:22Z" finished-at="2019-04-01T05:12:33Z">
+      <class name="com.training.functional.tests.RETC_078">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_078@6e1567f1]" name="setUp" is-config="true" duration-ms="36021" started-at="2019-04-01T05:11:22Z" finished-at="2019-04-01T05:11:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Functional_Test_RETC_048()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="Functional_Test_RETC_048" duration-ms="63854" started-at="2019-03-19T13:12:13Z" finished-at="2019-03-19T13:13:17Z">
+        <test-method status="PASS" signature="Functional_Test_RETC_078(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_078@6e1567f1]" name="Functional_Test_RETC_078" duration-ms="15465" started-at="2019-04-01T05:11:58Z" data-provider="excel-inputs1" finished-at="2019-04-01T05:12:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manzoor mehadi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Manzoor@Mehadi123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Agent]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functional_Test_RETC_048 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_048@59494225]" name="tearDown" is-config="true" duration-ms="2094" started-at="2019-03-19T13:13:17Z" finished-at="2019-03-19T13:13:19Z">
+        </test-method> <!-- Functional_Test_RETC_078 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_078(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_078@6e1567f1]" name="Functional_Test_RETC_078" duration-ms="8916" started-at="2019-04-01T05:12:14Z" data-provider="excel-inputs1" finished-at="2019-04-01T05:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[alex hales]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[alex@12312432432]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_078 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_078(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_078@6e1567f1]" name="Functional_Test_RETC_078" duration-ms="7858" started-at="2019-04-01T05:12:23Z" data-provider="excel-inputs1" finished-at="2019-04-01T05:12:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mariya]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[www.google.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mariya@12312354324532]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Shop manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_078 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_078@6e1567f1]" name="tearDown" is-config="true" duration-ms="2094" started-at="2019-04-01T05:12:31Z" finished-at="2019-04-01T05:12:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.functional.tests.RETC_048 -->
-    </test> <!-- RETC_048 -->
-    <test name="RETC_049" duration-ms="173972" started-at="2019-03-19T13:13:19Z" finished-at="2019-03-19T13:16:13Z">
-      <class name="com.training.functional.tests.RETC_049">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="setUp" is-config="true" duration-ms="125126" started-at="2019-03-19T13:13:19Z" finished-at="2019-03-19T13:15:24Z">
+      </class> <!-- com.training.functional.tests.RETC_078 -->
+    </test> <!-- RETC_078 -->
+    <test name="RETC_079" duration-ms="64379" started-at="2019-04-01T05:12:33Z" finished-at="2019-04-01T05:13:37Z">
+      <class name="com.training.functional.tests.RETC_079">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_079@25bbe1b6]" name="setUp" is-config="true" duration-ms="32790" started-at="2019-04-01T05:12:33Z" finished-at="2019-04-01T05:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Functional_Test_RETC_049()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="Functional_Test_RETC_049" duration-ms="46743" started-at="2019-03-19T13:15:24Z" finished-at="2019-03-19T13:16:11Z">
+        <test-method status="PASS" signature="Functional_Test_RETC_079(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_079@25bbe1b6]" name="Functional_Test_RETC_079" duration-ms="12455" started-at="2019-04-01T05:13:06Z" data-provider="excel-inputs2" finished-at="2019-04-01T05:13:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New Launches]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[launch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Best]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[New Launches of vilas, apartments, flats]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functional_Test_RETC_049 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_049@ff5b51f]" name="tearDown" is-config="true" duration-ms="2102" started-at="2019-03-19T13:16:11Z" finished-at="2019-03-19T13:16:13Z">
+        </test-method> <!-- Functional_Test_RETC_079 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_079(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_079@25bbe1b6]" name="Functional_Test_RETC_079" duration-ms="8111" started-at="2019-04-01T05:13:18Z" data-provider="excel-inputs2" finished-at="2019-04-01T05:13:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mana Apartments]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[launch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Book_Flat]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[New Launches of vilas, apartments, flats]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_079 -->
+        <test-method status="PASS" signature="Functional_Test_RETC_079(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.functional.tests.RETC_079@25bbe1b6]" name="Functional_Test_RETC_079" duration-ms="8933" started-at="2019-04-01T05:13:26Z" data-provider="excel-inputs2" finished-at="2019-04-01T05:13:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Brigade Apartments]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[post sale]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Booking_Flat]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[New flats for sale]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Functional_Test_RETC_079 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_079@25bbe1b6]" name="tearDown" is-config="true" duration-ms="2043" started-at="2019-04-01T05:13:35Z" finished-at="2019-04-01T05:13:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.functional.tests.RETC_049 -->
-    </test> <!-- RETC_049 -->
-    <test name="RETC_050" duration-ms="101124" started-at="2019-03-19T13:16:13Z" finished-at="2019-03-19T13:17:54Z">
-      <class name="com.training.functional.tests.RETC_050">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="setUp" is-config="true" duration-ms="63524" started-at="2019-03-19T13:16:13Z" finished-at="2019-03-19T13:17:17Z">
+      </class> <!-- com.training.functional.tests.RETC_079 -->
+    </test> <!-- RETC_079 -->
+    <test name="RETC_080" duration-ms="90851" started-at="2019-04-01T05:13:37Z" finished-at="2019-04-01T05:15:08Z">
+      <class name="com.training.functional.tests.RETC_080">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.functional.tests.RETC_080@5649fd9b]" name="setUp" is-config="true" duration-ms="31994" started-at="2019-04-01T05:13:37Z" finished-at="2019-04-01T05:14:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Functional_Test_RETC_050()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="Functional_Test_RETC_050" duration-ms="35579" started-at="2019-03-19T13:17:17Z" finished-at="2019-03-19T13:17:52Z">
+        <test-method status="PASS" signature="Functional_Test_RETC_080()[pri:0, instance:com.training.functional.tests.RETC_080@5649fd9b]" name="Functional_Test_RETC_080" duration-ms="56597" started-at="2019-04-01T05:14:09Z" finished-at="2019-04-01T05:15:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Functional_Test_RETC_050 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_050@29ca901e]" name="tearDown" is-config="true" duration-ms="2019" started-at="2019-03-19T13:17:52Z" finished-at="2019-03-19T13:17:54Z">
+        </test-method> <!-- Functional_Test_RETC_080 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.functional.tests.RETC_080@5649fd9b]" name="tearDown" is-config="true" duration-ms="2257" started-at="2019-04-01T05:15:06Z" finished-at="2019-04-01T05:15:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.functional.tests.RETC_050 -->
-    </test> <!-- RETC_050 -->
+      </class> <!-- com.training.functional.tests.RETC_080 -->
+    </test> <!-- RETC_080 -->
   </suite> <!-- Sample test Suite -->
 </testng-results>

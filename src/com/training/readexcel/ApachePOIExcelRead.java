@@ -19,7 +19,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *      access.
  */
 public class ApachePOIExcelRead {
-	public  String [][] getExcelContent(String fileName) {
+	public  String [][] getExcelContent(String fileName,String sheetname) {
 		int rowCount =0; 
 		String [][] list1 = null; 
 		
@@ -31,7 +31,7 @@ public class ApachePOIExcelRead {
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheetAt(0);
+			XSSFSheet sheet = workbook.getSheet(sheetname);//Changed by Sachin to iterate the sheet.---->Old line:XSSFSheet sheet = workbook.getSheetAt(0);
 			
 			int rowTotal = sheet.getLastRowNum();
 
@@ -42,10 +42,11 @@ public class ApachePOIExcelRead {
 			
 			// Iterate through each rows one by one
 			Iterator<Row> rowIterator = sheet.iterator();
-			 list1 = new String[rowTotal][2];
+			 list1 = new String[rowTotal-1][2];	//Changed by Sachin for skipping last null row.--> Old line: list1 = new String[rowTotal][2];
+			 Row row = rowIterator.next();	//Added by Sachin for skipping the header
 			 
 			while (rowIterator.hasNext()) {
-				Row row = rowIterator.next();
+				row = rowIterator.next();
 				// For each row, iterate through all the columns
 				Iterator<Cell> cellIterator = row.cellIterator();
 
@@ -88,8 +89,9 @@ public class ApachePOIExcelRead {
 		return list1;
 	}
 
-	public static void main(String[] args) {
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
+}
+/*	public static void main(String[] args) {
+		String fileName = "./resources/RETC_Test_Data_Complex_TC.xlsx";//Modified path by Sachin as per instructed
 		
 		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
 			for(String  tt : temp){
@@ -98,4 +100,4 @@ public class ApachePOIExcelRead {
 		}
 
 	}
-}
+}*/

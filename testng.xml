@@ -8,33 +8,33 @@
 		</classes>
 	</test>
 
-	<test name="RETC_046">
+	<test name="RETC_076">
 		<classes>
-			<class name="com.training.functional.tests.RETC_046" />
+			<class name="com.training.functional.tests.RETC_076" />
+		</classes>
+	</test>
+	
+	<test name="RETC_077">
+		<classes>
+			<class name="com.training.functional.tests.RETC_077" />
 		</classes>
 	</test>
 
-	<test name="RETC_047">
+	<test name="RETC_078">
 		<classes>
-			<class name="com.training.functional.tests.RETC_047" />
+			<class name="com.training.functional.tests.RETC_078" />
 		</classes>
 	</test>
 
-	<test name="RETC_048">
+	<test name="RETC_079">
 		<classes>
-			<class name="com.training.functional.tests.RETC_048" />
+			<class name="com.training.functional.tests.RETC_079" />
 		</classes>
 	</test>
 
-	<test name="RETC_049">
+	<test name="RETC_080">
 		<classes>
-			<class name="com.training.functional.tests.RETC_049" />
-		</classes>
-	</test>
-
-	<test name="RETC_050">
-		<classes>
-			<class name="com.training.functional.tests.RETC_050" />
+			<class name="com.training.functional.tests.RETC_080" />
 		</classes>
 	</test>
 

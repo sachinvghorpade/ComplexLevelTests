@@ -27,7 +27,7 @@ public class LoadDBDetails {
 			dbBean.setDriver(properties.getProperty("driver"));
 			// getting the user name if not present (by default - root ) 
 			dbBean.setUserName(properties.getProperty("username", "root"));
-			dbBean.setPassword(properties.getProperty("password"));
+			dbBean.setPassword(properties.getProperty("password","root"));
 			
 			return dbBean; 
 			
